@@ -1,4 +1,4 @@
-Agalar Dilerseniz Çekme İçin Demenemenmeneme olarak kullanın bu repoyu
+LAN YAZABİLİYORUM, OHH YAZMA QEYFFFFF
 
 # Re-Do Everything
 
