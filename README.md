@@ -1,3 +1,5 @@
+Agalar Dilerseniz Çekme İçin Demenemenmeneme olarak kullanın bu repoyu
+
 # Re-Do Everything
 
 A new Flutter project created with [FlutLab](https://flutlab.io)
