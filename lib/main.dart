@@ -33,19 +33,19 @@ class MainWidgetState extends State<MainWidget> {
       selectedName = sayacNames[sayacIndex];
     });
   }
-  
-  void TexoIsmiDegis(){
-    setState((){
+
+  void TexoIsmiDegis() {
+    setState(() {
       selectedTEXO = textyTexoText[textyIndexo];
-    })
+    });
   }
-  
-  void LongPres(int a){
-      print('aga uzun bastin!');
-      sayacIndex = a;
-      textyIndexo = 1;
-      SayacIsmiDegis();
-      TexoIsmiDegis();
+
+  void LongPres(int a) {
+    print('aga uzun bastin!');
+    sayacIndex = a;
+    textyIndexo = 1;
+    SayacIsmiDegis();
+    TexoIsmiDegis();
   }
 
   void ShortPres() {
