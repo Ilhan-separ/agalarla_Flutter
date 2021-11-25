@@ -25,7 +25,7 @@ class MainWidgetState extends State<MainWidget> {
     'QANDIRDIM!',
   ]
 
-  String selectedTEXO = textyTexoText[0];
+  var selectedTEXO = textyTexoText[0];
   String selectedName = 'Basit Sayac AGAM' ;
 
   void SayacIsmiDegis() {
