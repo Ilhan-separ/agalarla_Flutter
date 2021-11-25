@@ -31,7 +31,7 @@ class MainWidgetState extends State<MainWidget> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text(selectedName),
+          title: Text('selectedName'),
           backgroundColor: Colors.red.shade100,
           foregroundColor: Colors.red,
         ),
