@@ -47,8 +47,7 @@ class MainWidgetState extends State<MainWidget> {
                   onLongPress: () {
                     print('aga uzun bastin!');
                     sayacIndex = 1;
-                    SayacIsmiDegis;
-                    print('aga uzun bastin2!');
+                    SayacIsmiDegis();
                   },
                   onPressed: () => print('aga normal bastin!'),
                 ),
