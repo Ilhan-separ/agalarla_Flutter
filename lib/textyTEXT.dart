@@ -13,6 +13,7 @@ class TextyTEXT extends StatelessWidget {
         textAlign: TextAlign.center,
       ),
       width: double.infinity,
+      margin: EdgeInsets.all(30),
     );
   }
 }
