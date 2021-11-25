@@ -4,6 +4,7 @@ void main() => runApp(MainWidget());
 // KANKAM bi coommit changes
 
 class MainWidget extends StatefulWidget {
+  @override
   State<StatefulWidget> createState() {
     return MainWidgetState();
   }
@@ -19,7 +20,7 @@ class MainWidgetState extends State<MainWidget> {
 
   String selectedName;
 
-  SayacIsmiDegis() {
+  void SayacIsmiDegis() {
     setState(() {
       selectedName = sayacNames[sayacIndex];
     });
