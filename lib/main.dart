@@ -31,7 +31,7 @@ class MainWidgetState extends State<MainWidget> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('selectedName'),
+          title: Text(selectedName),
           backgroundColor: Colors.red.shade100,
           foregroundColor: Colors.red,
         ),
@@ -49,11 +49,7 @@ class MainWidgetState extends State<MainWidget> {
                 ),
                 RaisedButton(
                   child: Text('aga buton 2'),
-                  onLongPress: () {
-                    print('aga uzun bastin!');
-                    //sayacIndex = 2;
-                    //SayacIsmiDegis;
-                  },
+                  onLongPress: () => print('aga uzun bastin!'),
                   onPressed: () => print('aga normal bastin!'),
                 ),
                 // ToggleButtons(
