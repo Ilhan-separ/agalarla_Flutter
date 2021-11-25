@@ -57,7 +57,7 @@ class MainWidgetState extends State<MainWidget> {
                     print('aga uzun bastin!');
                     sayacIndex = 2;
                     SayacIsmiDegis();
-                  }
+                  },
                   onPressed: () => print('aga normal bastin!'),
                 ),
                 // ToggleButtons(
