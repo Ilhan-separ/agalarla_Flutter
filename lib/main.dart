@@ -18,7 +18,7 @@ class MainWidgetState extends State<MainWidget> {
     'DELUX 3XL Sayaç'
   ];
 
-  String selectedName = 'gizli bi uygulama';
+  String selectedName = sayacNames[sayacIndex];
 
   void SayacIsmiDegis() {
     setState(() {
