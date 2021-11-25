@@ -9,7 +9,7 @@ class MainWidget extends StatefulWidget {
   }
 }
 
-class MainWidgetState extends State {
+class MainWidgetState extends State<MainWidget> {
   int sayacIndex = 0;
   var sayacNames = [
     'Basic Sayaç',
