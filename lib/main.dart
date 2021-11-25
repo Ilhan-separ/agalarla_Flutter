@@ -19,7 +19,14 @@ class MainWidgetState extends State<MainWidget> {
     'DELUX 3XL Sayaç'
   ];
 
-  String selectedName = 'basit sayaç';
+  int textyIndexo = 0;
+  var textyTexoText = [
+    'Aga basit sayaç sadece bu',
+    'QANDIRDIM!',
+  ]
+
+  String selectedTEXO = textyTexoText[0];
+  String selectedName = 'Basit Sayac AGAM' ;
 
   void SayacIsmiDegis() {
     setState(() {
