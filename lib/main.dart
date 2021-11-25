@@ -33,11 +33,27 @@ class MainWidgetState extends State<MainWidget> {
       selectedName = sayacNames[sayacIndex];
     });
   }
+  
+  void TexoIsmiDegis(){
+    setState((){
+      selectedTEXO = textyTexoText[textyIndexo];
+    })
+  }
+  
+  void LongPres(int a){
+      print('aga uzun bastin!');
+      sayacIndex = a;
+      textyIndexo = 1;
+      SayacIsmiDegis();
+      TexoIsmiDegis();
+  }
 
   void ShortPres() {
     print('aga normal bastin!');
     sayacIndex = 0;
+    textyIndexo = 0;
     SayacIsmiDegis();
+    TexoIsmiDegis();
   }
 
   @override
@@ -56,20 +72,12 @@ class MainWidgetState extends State<MainWidget> {
               children: [
                 RaisedButton(
                   child: Text('aga buton 1'),
-                  onLongPress: () {
-                    print('aga uzun bastin!');
-                    sayacIndex = 1;
-                    SayacIsmiDegis();
-                  },
+                  onLongPress: () => LongPres(1),
                   onPressed: () => ShortPres(),
                 ),
                 RaisedButton(
                   child: Text('aga buton 2'),
-                  onLongPress: () {
-                    print('aga uzun bastin!');
-                    sayacIndex = 2;
-                    SayacIsmiDegis();
-                  },
+                  onLongPress: () => LongPres(2),
                   onPressed: () => ShortPres(),
                 ),
                 // ToggleButtons(
