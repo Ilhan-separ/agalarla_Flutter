@@ -23,10 +23,10 @@ class MainWidgetState extends State<MainWidget> {
   var textyTexoText = [
     'Aga basit sayaç sadece bu',
     'QANDIRDIM!',
-  ]
+  ];
 
   String selectedTEXO = 'normal sayaç işte';
-  String selectedName = 'knk ypma' ;
+  String selectedName = 'knk ypma';
 
   void SayacIsmiDegis() {
     setState(() {
