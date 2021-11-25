@@ -10,6 +10,7 @@ class MainWidget extends StatefulWidget {
 }
 
 class MainWidgetState extends State {
+  int sayacIndex = 0;
   var sayacNames = [
     'Basic Sayaç',
     'ULTIMATE Sayaç',
@@ -18,9 +19,9 @@ class MainWidgetState extends State {
 
   String selectedName;
 
-  SayacIsmiDegis(int a) {
+  SayacIsmiDegis() {
     setState(() {
-      selectedName = sayacNames[a];
+      selectedName = sayacNames[sayacIndex];
     });
   }
 
@@ -52,7 +53,8 @@ class MainWidgetState extends State {
                 ),
                 ToggleButtons(
                   isSelected: [
-                    SayacIsmiDegis(3)
+                    sayacIndex = 3;
+                    SayacIsmiDegis
                   ],
                   children: [
                     Text('aga buton 3'),
