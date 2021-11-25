@@ -80,15 +80,6 @@ class MainWidgetState extends State<MainWidget> {
                   onLongPress: () => LongPres(2),
                   onPressed: () => ShortPres(),
                 ),
-                // ToggleButtons(
-                //   isSelected: [
-                //     sayacIndex = 2;
-                //     SayacIsmiDegis;
-                //   ],
-                //   children: [
-                //     Text('aga buton 3'),
-                //   ],
-                // )
               ],
             )
           ],
