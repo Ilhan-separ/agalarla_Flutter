@@ -14,7 +14,7 @@ class MainWidget extends StatefulWidget {
 class MainWidgetState extends State<MainWidget> {
   int sayacIndex = 0;
   var sayacNames = [
-    'Basic Sayaç',
+    'Basit Sayaç',
     'ULTIMATE Sayaç',
     'DELUX 3XL Sayaç'
   ];
@@ -25,6 +25,12 @@ class MainWidgetState extends State<MainWidget> {
     setState(() {
       selectedName = sayacNames[sayacIndex];
     });
+  }
+
+  void ShortPres() {
+    print('aga normal bastin!');
+    sayacIndex = 0;
+    SayacIsmiDegis();
   }
 
   @override
@@ -48,7 +54,7 @@ class MainWidgetState extends State<MainWidget> {
                     sayacIndex = 1;
                     SayacIsmiDegis();
                   },
-                  onPressed: () => print('aga normal bastin!'),
+                  onPressed: () => ShortPres(),
                 ),
                 RaisedButton(
                   child: Text('aga buton 2'),
