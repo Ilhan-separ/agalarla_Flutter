@@ -53,7 +53,7 @@ class MainWidgetState extends State {
                 ),
                 ToggleButtons(
                   isSelected: [
-                    sayacIndex = 3];
+                    sayacIndex = 3]);
                     SayacIsmiDegis
                   ],
                   children: [
