@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './textyTEXT';
+import './TextyTEXT';
 
 void main() => runApp(MainWidget());
 // KANKAM bi coommit changes
