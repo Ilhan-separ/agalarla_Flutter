@@ -11,27 +11,27 @@ class MainWidget extends StatefulWidget {
 }
 
 class MainWidgetState extends State<MainWidget> {
-  // int sayacIndex = 0;
-  // var sayacNames = [
-  //   'Basic Sayaç',
-  //   'ULTIMATE Sayaç',
-  //   'DELUX 3XL Sayaç'
-  // ];
+  int sayacIndex = 0;
+  var sayacNames = [
+    'Basic Sayaç',
+    'ULTIMATE Sayaç',
+    'DELUX 3XL Sayaç'
+  ];
 
-  //String selectedName = 'wot';
+  String selectedName = 'wot';
 
-  // void SayacIsmiDegis() {
-  //   setState(() {
-  //     selectedName = sayacNames[sayacIndex];
-  //   });
-  // }
+  void SayacIsmiDegis() {
+    setState(() {
+      selectedName = sayacNames[sayacIndex];
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('selectedName'),
+          title: Text(selectedName),
           backgroundColor: Colors.red.shade100,
           foregroundColor: Colors.red,
         ),
