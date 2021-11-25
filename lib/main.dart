@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './textyTEXT.dart';
 
 void main() => runApp(MainWidget());
 // KANKAM bi coommit changes
@@ -13,17 +14,46 @@ class MainWidget extends StatefulWidget {
 class MainWidgetState extends State<MainWidget> {
   int sayacIndex = 0;
   var sayacNames = [
-    'Basic Sayaç',
+    'Basit Sayaç',
     'ULTIMATE Sayaç',
     'DELUX 3XL Sayaç'
   ];
 
-  String selectedName = 'basit sayaç';
+  int textyIndexo = 0;
+  var textyTexoText = [
+    'Aga basit sayaç sadece bu',
+    'QANDIRDIM!',
+  ];
+
+  String selectedTEXO = 'normal sayaç işte';
+  String selectedName = 'knk ypma';
 
   void SayacIsmiDegis() {
     setState(() {
       selectedName = sayacNames[sayacIndex];
     });
+  }
+
+  void TexoIsmiDegis() {
+    setState(() {
+      selectedTEXO = textyTexoText[textyIndexo];
+    });
+  }
+
+  void LongPres(int a) {
+    print('aga uzun bastin!');
+    sayacIndex = a;
+    textyIndexo = 1;
+    SayacIsmiDegis();
+    TexoIsmiDegis();
+  }
+
+  void ShortPres() {
+    print('aga normal bastin!');
+    sayacIndex = 0;
+    textyIndexo = 0;
+    SayacIsmiDegis();
+    TexoIsmiDegis();
   }
 
   @override
@@ -37,38 +67,19 @@ class MainWidgetState extends State<MainWidget> {
         ),
         body: Column(
           children: [
-            Text('deneme1'),
-            Text('deneme2'),
-            Text('deneme3'),
+            TextyTEXT(selectedTEXO),
             ButtonBar(
               children: [
                 RaisedButton(
                   child: Text('aga buton 1'),
-                  onLongPress: () {
-                    print('aga uzun bastin!');
-                    sayacIndex = 1;
-                    SayacIsmiDegis();
-                  },
-                  onPressed: () => print('aga normal bastin!'),
+                  onLongPress: () => LongPres(1),
+                  onPressed: () => ShortPres(),
                 ),
                 RaisedButton(
                   child: Text('aga buton 2'),
-                  onLongPress: () {
-                    print('aga uzun bastin!');
-                    sayacIndex = 2;
-                    SayacIsmiDegis();
-                  },
-                  onPressed: () => print('aga normal bastin!'),
+                  onLongPress: () => LongPres(2),
+                  onPressed: () => ShortPres(),
                 ),
-                // ToggleButtons(
-                //   isSelected: [
-                //     sayacIndex = 2;
-                //     SayacIsmiDegis;
-                //   ],
-                //   children: [
-                //     Text('aga buton 3'),
-                //   ],
-                // )
               ],
             )
           ],
