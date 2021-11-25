@@ -18,7 +18,7 @@ class MainWidgetState extends State<MainWidget> {
     'DELUX 3XL Sayaç'
   ];
 
-  String selectedName = sayacNames[0];
+  String selectedName = 'basit sayaç';
 
   void SayacIsmiDegis() {
     setState(() {
@@ -44,7 +44,11 @@ class MainWidgetState extends State<MainWidget> {
               children: [
                 RaisedButton(
                   child: Text('aga buton 1'),
-                  onLongPress: () => print('aga uzun bastin!'),
+                  onLongPress: () {
+                  print('aga uzun bastin!'),
+                  sayacIndex = 1,
+                  SayacIsmiDegis,
+                  } 
                   onPressed: () => print('aga normal bastin!'),
                 ),
                 RaisedButton(
