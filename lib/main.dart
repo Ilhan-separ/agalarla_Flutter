@@ -3,7 +3,13 @@ import 'package:flutter/material.dart';
 void main() => runApp(MainWidget());
 // KANKAM bi coommit changes
 
-class MainWidget extends StatelessWidget {
+class MainWidget extends StatefulWidget {
+  State<StatefulWidget> createState() {
+    return MainWidgetState();
+  }
+}
+
+class MainWidgetState extends State {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
