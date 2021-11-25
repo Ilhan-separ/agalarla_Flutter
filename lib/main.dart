@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './textyTEXT';
 
 void main() => runApp(MainWidget());
 // KANKAM bi coommit changes
@@ -37,9 +38,7 @@ class MainWidgetState extends State<MainWidget> {
         ),
         body: Column(
           children: [
-            Text('deneme1'),
-            Text('deneme2'),
-            Text('deneme3'),
+            TextyTEXT('deneme1'),
             ButtonBar(
               children: [
                 RaisedButton(
