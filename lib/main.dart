@@ -44,7 +44,7 @@ class MainWidgetState extends State<MainWidget> {
         ),
         body: Column(
           children: [
-            TextyTEXT('deneme1'),
+            TextyTEXT('Aga basit sayaç sadece bu'),
             ButtonBar(
               children: [
                 RaisedButton(
