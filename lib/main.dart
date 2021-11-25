@@ -48,18 +48,22 @@ class MainWidgetState extends State<MainWidget> {
                 ),
                 RaisedButton(
                   child: Text('aga buton 2'),
-                  onLongPress: () => print('aga uzun bastin!'),
+                  onLongPress: (){
+                    print('aga uzun bastin!');
+                    sayacIndex = 2;
+                    SayacIsmiDegis;    
+                  } 
                   onPressed: () => print('aga normal bastin!'),
                 ),
-                ToggleButtons(
-                  isSelected: [
-                    sayacIndex = 2;
-                    SayacIsmiDegis;
-                  ],
-                  children: [
-                    Text('aga buton 3'),
-                  ],
-                )
+                // ToggleButtons(
+                //   isSelected: [
+                //     sayacIndex = 2;
+                //     SayacIsmiDegis;
+                //   ],
+                //   children: [
+                //     Text('aga buton 3'),
+                //   ],
+                // )
               ],
             )
           ],
