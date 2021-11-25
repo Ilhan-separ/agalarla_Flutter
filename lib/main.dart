@@ -48,6 +48,7 @@ class MainWidgetState extends State<MainWidget> {
                     print('aga uzun bastin!');
                     sayacIndex = 1;
                     SayacIsmiDegis;
+                    print('aga uzun bastin2!');
                   },
                   onPressed: () => print('aga normal bastin!'),
                 ),
