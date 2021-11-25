@@ -10,12 +10,26 @@ class MainWidget extends StatefulWidget {
 }
 
 class MainWidgetState extends State {
+  var sayacNames = [
+    'Basic Sayaç',
+    'ULTIMATE Sayaç',
+    'DELUX 3XL Sayaç'
+  ];
+
+  String selectedName;
+
+  SayacIsmiDegis(int a) {
+    setState(() {
+      selectedName = sayacNames[a];
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Delux Sayac!!'),
+          title: Text(selectedName),
           backgroundColor: Colors.red.shade100,
           foregroundColor: Colors.red,
         ),
@@ -38,7 +52,7 @@ class MainWidgetState extends State {
                 ),
                 ToggleButtons(
                   isSelected: [
-                    true
+                    SayacIsmiDegis(3);
                   ],
                   children: [
                     Text('aga buton 3'),
