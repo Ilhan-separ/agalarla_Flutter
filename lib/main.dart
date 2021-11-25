@@ -52,7 +52,7 @@ class MainWidgetState extends State {
                 ),
                 ToggleButtons(
                   isSelected: [
-                    SayacIsmiDegis(3);
+                    SayacIsmiDegis(3)
                   ],
                   children: [
                     Text('aga buton 3'),
