@@ -18,7 +18,7 @@ class MainWidgetState extends State<MainWidget> {
     'DELUX 3XL Sayaç'
   ];
 
-  string selectedName;
+  var selectedName;
 
   void SayacIsmiDegis() {
     setState(() {
