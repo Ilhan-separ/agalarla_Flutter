@@ -63,7 +63,7 @@ class MainWidgetState extends State<MainWidget> {
                     sayacIndex = 2;
                     SayacIsmiDegis();
                   },
-                  onPressed: () => print('aga normal bastin!'),
+                  onPressed: () => ShortPres(),
                 ),
                 // ToggleButtons(
                 //   isSelected: [
