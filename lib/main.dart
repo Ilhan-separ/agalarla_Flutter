@@ -11,6 +11,7 @@ class MainWidget extends StatefulWidget {
   }
 }
 // çok afedersin ama bunun gibi bir projey, kabul edemiyorum amk.
+//anan ulan anan.
 class MainWidgetState extends State<MainWidget> {
   int sayacIndex = 0;
   var sayacNames = [
