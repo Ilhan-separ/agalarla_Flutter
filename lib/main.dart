@@ -10,7 +10,7 @@ class MainWidget extends StatefulWidget {
     return MainWidgetState();
   }
 }
-
+// çok afedersin ama bunun gibi bir projey, kabul edemiyorum amk.
 class MainWidgetState extends State<MainWidget> {
   int sayacIndex = 0;
   var sayacNames = [
